@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechBeez | Module.A | Ex.01</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>G-Shock</h1>
+      <ul>
+        <li><a href="#morale">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#featured">Featured Products</a></li>
+        <li><a href="#registration">Registration</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Morale -->
+      <section id="morale" class="morale">
+        <h1 class="slogan">Absolute<br />Toughness</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        <button class="btn">Buy Now</button>
+      </section>
+      <!-- About -->
+      <section class="about" id="about">
+        <h1 class="top-heading">About</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia
+          error quisquam incidunt dolorum illum tempore exercitationem facilis!
+          Sed dolorum officia recusandae, provident possimus quod nostrum
+          delectus hic. Tenetur accusantium labore cumque voluptas possimus
+          dolorem porro. Accusantium voluptate provident architecto consectetur
+          distinctio reiciendis velit, eos quis mollitia magni fuga placeat.
+        </p>
+        <button class="btn">Join us</button>
+      </section>
+      <!-- Featured Products -->
+      <section class="featured" id="featured">
+        <h1 class="top-heading">Featured Products</h1>
+        <div>
+          <div class="card">
+            <img src="./assets/images/feature-1.jpg" alt="featured product" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur, debitis?
+            </p>
+            <h2>Price: <span>$150</span></h2>
+          </div>
+          <div class="card">
+            <img src="./assets/images/feature-2.jpg" alt="featured product" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur, debitis?
+            </p>
+            <h2>Price: <span>$150</span></h2>
+          </div>
+          <div class="card">
+            <img src="./assets/images/feature-3.jpg" alt="featured product" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur, debitis?
+            </p>
+            <h2>Price: <span>$150</span></h2>
+          </div>
+        </div>
+        <a class="btn" href="./products.html">Show more...</a>
+      </section>
+      <section id="registration" class="registration">
+        <form>
+          <h1 class="top-heading">Registration</h1>
+          <div class="form-control">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              placeholder="Enter your first name"
+            />
+          </div>
+          <div class="form-control">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+              placeholder="Enter your last name"
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-control">
+            <label for="phone">Phone</label>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              required
+              placeholder="Enter your phone"
+            />
+          </div>
+          <div class="form-control">
+            <label for="gender">Gender</label>
+            <div>
+              <input
+                type="radio"
+                id="gender"
+                name="gender"
+                value="male"
+                checked
+              />
+              Male
+              <input type="radio" id="gender" name="gender" value="female" />
+              Female
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" required />
+          </div>
+          <div class="form-control">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" required />
+          </div>
+          <input class="btn" type="submit" value="Register" />
+        </form>
+      </section>
+    </main>
+    <footer>All rights are reserved &reg;</footer>
+  </body>
+</html>
