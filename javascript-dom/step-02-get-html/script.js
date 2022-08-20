@@ -1,0 +1,12 @@
+const paraId = document.getElementById('para-2');
+console.log(paraId);
+const allParas = document.getElementsByTagName('p');
+console.log(allParas);
+const allUls = document.getElementsByTagName('ul');
+console.log(allUls);
+const paraClassElements = document.getElementsByClassName('para');
+console.log(paraClassElements);
+const queryElement = document.querySelector('#para-2');
+console.log(queryElement);
+const queryAllElements = document.querySelectorAll('.para');
+console.log(queryAllElements);
