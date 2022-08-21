@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBeez | Module A | Ex.02</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>
+            <i class="fa-solid fa-store"></i>
+            Store
+        </h1>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#morale">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+        </ul>
+        <div class="nav-icons">
+            <!-- <button><i class="fa-solid fa-xmark"></i></button> -->
+            <button class="icon-button" id="menu-btn"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
+            <button class="icon-button">
+                <i id="cart-btn" class="fa-solid fa-cart-shopping"></i>
+                <span class="notification" id="total-cart-items">3</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Cart -->
+    <div class="cart" id="cart">
+        <button class="icon-button" id="cart-close-icon"><i class="fa-solid fa-xmark"></i></button>
+        <h1>Your Cart</h1>
+        <div class="cart-items-container">
+            <p>No Products Selected.</p>
+        </div>
+        <div class="details">
+            <p>Total Bill : $<span id="total-bill">120</span></p>
+            <button class="checkout" id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Morale -->
+    <div id="morale" class="morale">
+        <div class="tag-lines">
+            <h1>Online Store</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, dignissimos officiis a nostrum incidunt non commodi iste, nesciunt suscipit assumenda esse illo ad, ratione inventore. Fuga totam illum quibusdam necessitatibus!</p>
+            <p class="motto">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="vector-image">
+            <img src="./assets/vectors/shopping.svg" alt="Shopping Vector Image">
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="about">
+        <div>
+            <h1>About Company</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit ea, ex cumque quisquam doloremque reiciendis consequuntur autem veniam asperiores accusantium ipsa similique facere! Illo saepe totam quibusdam molestiae nostrum.
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div id="products" class="products">
+        <h1>All Products</h1>
+        <input type="text" placeholder="Search Products by name and category">
+        <div class="all-products-container">
+            <p>No Products Found.</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/fc9e6db180.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
