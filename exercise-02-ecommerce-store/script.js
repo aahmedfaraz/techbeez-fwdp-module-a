@@ -119,7 +119,7 @@ const updateAllProductsDOM = () => {
     }
 
     allProductsContainer.innerHTML = `${
-        allProducts.map((product, index) => {
+        filteredProducts.map((product, index) => {
             return `
             <div class="product-card">
                 <img src="${product.thumbnail}" alt="product-image-${index}">
@@ -141,7 +141,7 @@ const updateAllProductsDOM = () => {
 
 // 2 - Function - to add product to cart
 const addToCart = (e) => {
-    cartProducts.push(allProducts[parseInt(e.target.getAttribute('data-index').split('-')[1])])
+    cartProducts.push(filteredProducts[parseInt(e.target.getAttribute('data-index').split('-')[1])])
     updateCartDOM();
 }
 
@@ -194,6 +194,18 @@ const removeProductFromCart = (e) => {
     updateCartDOM();
 }
 
+// 5 - Function - to filter products
+const filterProductsByText = (text = "") => {
+    text = text.toLowerCase();
+    filteredProducts = allProducts.filter((product) => {
+        if(product.title.toLowerCase().includes(text) || product.category.toLowerCase().includes(text))
+        {
+            return product;
+        }
+    });
+    updateAllProductsDOM();
+}
+
 // ===================================================================================
 // All Event Listeners
 // ===================================================================================
@@ -236,15 +248,12 @@ checkout.addEventListener('click', e => {
     updateCartDOM();
 })
 
-// 6 - Event Listerner - Search
-search.addEventListener('change', e => {
-    filteredProducts = allProducts.filter((product, index) => {
-        
-    })
-})
+// 6 - Event Listerner - to filter products by text
+search.addEventListener('input', e => filterProductsByText(e.target.value))
 
 // ===================================================================================
 // Init
 // ===================================================================================
+filterProductsByText();
 updateAllProductsDOM();
 updateCartDOM();
