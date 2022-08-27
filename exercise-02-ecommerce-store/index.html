@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>TechBeez | Module A | Ex.02</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav>
@@ -22,9 +24,9 @@
         <div class="nav-icons">
             <!-- <button><i class="fa-solid fa-xmark"></i></button> -->
             <button class="icon-button" id="menu-btn"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
-            <button class="icon-button">
-                <i id="cart-btn" class="fa-solid fa-cart-shopping"></i>
-                <span class="notification" id="total-cart-items">3</span>
+            <button id="cart-btn" class="icon-button">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="notification" id="notification"></span>
             </button>
         </div>
     </nav>
@@ -33,11 +35,20 @@
     <div class="cart" id="cart">
         <button class="icon-button" id="cart-close-icon"><i class="fa-solid fa-xmark"></i></button>
         <h1>Your Cart</h1>
-        <div class="cart-items-container">
-            <p>No Products Selected.</p>
+        <div class="cart-items-container" id="cart-items-container">
+            <!-- <p class="message">No Products Selected.</p> -->
+            <!-- <div class="cart-product-card">
+                <img src="./assets/images/bag-1.jpg" alt="">
+                <div class="cart-product-details">
+                    <p>Title</p>
+                    <small>Category: abcd</small>
+                    <p>Price $100</p>
+                </div>
+                <button data-index="" class="cart-product-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div> -->
         </div>
         <div class="details">
-            <p>Total Bill : $<span id="total-bill">120</span></p>
+            <p>Total Bill : $<span id="total-bill"></span></p>
             <button class="checkout" id="checkout">Checkout</button>
         </div>
     </div>
@@ -46,7 +57,9 @@
     <div id="morale" class="morale">
         <div class="tag-lines">
             <h1>Online Store</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, dignissimos officiis a nostrum incidunt non commodi iste, nesciunt suscipit assumenda esse illo ad, ratione inventore. Fuga totam illum quibusdam necessitatibus!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, dignissimos officiis a nostrum incidunt
+                non commodi iste, nesciunt suscipit assumenda esse illo ad, ratione inventore. Fuga totam illum
+                quibusdam necessitatibus!</p>
             <p class="motto">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </div>
         <div class="vector-image">
@@ -61,20 +74,36 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit ea, ex cumque quisquam doloremque reiciendis consequuntur autem veniam asperiores accusantium ipsa similique facere! Illo saepe totam quibusdam molestiae nostrum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit ea, ex cumque quisquam
+            doloremque reiciendis consequuntur autem veniam asperiores accusantium ipsa similique facere! Illo saepe
+            totam quibusdam molestiae nostrum.
         </div>
     </div>
 
     <!-- Products -->
     <div id="products" class="products">
         <h1>All Products</h1>
-        <input type="text" placeholder="Search Products by name and category">
-        <div class="all-products-container">
-            <p>No Products Found.</p>
+        <input id="search" type="text" placeholder="Search Products by name and category">
+        <div class="all-products-container" id="all-products-container">
+            <!-- <p>No Products Found.</p> -->
+            <!-- <div class="product-card">
+                <img src="./assets/images/bag-1.jpg" alt="">
+                <div class="product-details">
+                    <h2>Title</h2>
+                    <small>Category: Glasses</small>
+                    <p>Price $120</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div> -->
         </div>
     </div>
+
+    <footer>
+        <p>All rights are reserved &copy;</p>
+    </footer>
 
     <script src="https://kit.fontawesome.com/fc9e6db180.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>
